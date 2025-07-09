@@ -1,5 +1,164 @@
-body {
-  background-color: red;
+:root {
+  --primary-color: #0161a8;
+  --secondary-color:#bd0c14;
+  --third-color:#dfc800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-two .primary-header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  z-index: 9;
+}
+.header-two .mid-header .mid-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header-two .header-logo img {
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+.header-two .mid-header {
+  padding: 16px 0 6px 0;
+}
+.header-two .mid-header ul li {
+  display: flex;
+  padding-left: 15px;
+  position: relative;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 500;
+  flex-direction: row;
+  align-items: center;
+}
+.header-two .mid-header ul li > span {
+  margin-right: 6px;
+}
+.header-two .mid-header ul li .icon {
+  position: relative;
+  transform: translateY(0%);
+}
+
+.about-section .about-item {
+  width: 100%;
+  height: 400px;
+}
+.about-section .about-item > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.read-more {
+  color: var(--secondary-color);
+}
+
+.header-2 .sticky-header {
+  background-color: var(--primary-color);
+}
+
+.dl-slider .default-btn {
+  background-color: var(--secondary-color);
+}
+
+.icon-box {
+  color: var(--secondary-color);
+  border-color: rgba(189, 12, 20, 0.5098039216);
+}
+.icon-box > span {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: rgba(189, 12, 20, 0.5098039216);
+}
+
+.feature-section {
+  background-image: url("../../img/b--5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feature-section .feature-wrap {
+  background-color: rgba(189, 12, 20, 0.5098039216);
+}
+
+.project-section .project-thumb {
+  height: 50vh;
+  padding: 10px;
+  object-fit: cover;
+}
+.project-section .project-thumb > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.cta-section {
+  background-image: url("../../img/b-7.jpg");
+}
+
+.service-section .wow {
+  margin-bottom: 16px;
+}
+.service-section .service-box {
+  margin-bottom: 16px;
+  height: 100%;
+}
+.service-section .service-box:hover {
+  background-color: var(--primary-color);
+}
+.service-section .service-icon {
+  color: var(--secondary-color);
+}
+
+.widget-section {
+  background-color: var(--primary-color);
+}
+.widget-section .widget-contact li i {
+  color: var(--secondary-color);
+}
+.widget-section .widget-box .widget-title h3:after {
+  background-color: var(--third-color);
+}
+.widget-section .wt-subscribe-form .form-control {
+  border-color: var(--third-color);
+}
+.widget-section .wt-subscribe-form button {
+  background-color: var(--primary-color);
+}
+
+.sponsor-item {
+  height: 150px;
+  background-color: #fff;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu-wrap ul {
+    flex-direction: column;
+  }
+}
+.footer-section {
+  background-color: #fff;
+}
+
+.primary-header-two .header-menu-wrap ul li > a:hover {
+  color: var(--secondary-color);
+}
+
+.dl-slider .slick-dots li.slick-active button {
+  background-color: var(--third-color) !important;
 }
 
 /*# sourceMappingURL=custom_style.css.map */

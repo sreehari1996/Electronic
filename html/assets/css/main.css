@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #0161a8;
+    --secondary-color:#bd0c14;
+    --third-color:#dfc800;
+  }
+
 /*  =====================================================
     Table of Contets
     =====================================================
@@ -571,7 +577,7 @@ button {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color:var(--primary-color);
+    background-color:var(--secondary-color);
     font-size: 10px;
     padding: 0;
     line-height: 40px;
@@ -990,7 +996,7 @@ button {
 
 .header-right a.header-btn {
     display: inline-block;
-    background: #fe5a0e;
+    background:var(--secondary-color);
     color: #FFF;
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
@@ -1228,11 +1234,11 @@ button {
 
 .header-two .primary-header {
     width: 100%;
-    /* position: absolute;
+    position: absolute;
     left: 0;
     bottom: 0;
     transform: translateY(50%);
-    z-index: 9; */
+    z-index: 9;
 }
 
 .header-two .primary-header-inner {
