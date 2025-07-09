@@ -37,6 +37,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&family=Work+Sans:wght@600&display=swap');
 
 /*  ======= 1.0 Common Styles ======= */
+:root{
+    --primary-color:#0460a3;
+    --secondary-color:#b60d16;
+}
 * {
     padding: 0;
     margin: 0;
@@ -174,7 +178,7 @@ button {
 
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: #fe5a0e;
+    background:#ddd;
 }
 
 ::selection {
@@ -404,7 +408,7 @@ button {
 
 .default-btn {
     display: inline-block;
-    background: #fe5a0e;
+    background:#b60d16;
     color: #FFF;
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
@@ -472,7 +476,7 @@ button {
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 0px;
-    color: #fe5a0e;
+    color:#0460a3;
     margin: 0 0 15px;
 }
 
@@ -567,7 +571,7 @@ button {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #fe5a0e;
+    background-color:var(--primary-color);
     font-size: 10px;
     padding: 0;
     line-height: 40px;
@@ -725,9 +729,10 @@ button {
 
 /* Menu Style */
 .header-menu-wrap ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
 }
 
 .header-menu-wrap ul li {
@@ -742,16 +747,16 @@ button {
     letter-spacing: 0;
     text-transform: capitalize;
     font-weight: 600;
-    color: #061b49;
+    color:#fff;
     padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
+    height:30px;
+    line-height:30px;
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
 }
 
 .header-menu-wrap ul li:hover > a {
-    color: #fe5a0e;
+    color:#b60d1581;
 }
 
 .header-menu-wrap li ul {
@@ -1037,7 +1042,7 @@ button {
 }
 
 .header-right .search-icon {
-    color: #061b49;
+    color:#fff;
     cursor: pointer;
 }
 
@@ -1062,7 +1067,7 @@ button {
 
 /*===== Top Bar =====*/
 .top-bar {
-    background-color: #061b49;
+    background-color:#0460a3;
 }
 
 .top-bar-inner {
@@ -1083,11 +1088,6 @@ button {
     padding-top: 7px;
     padding-bottom: 7px;
 }
-
-.top-bar .top-left li:first-child {
-    border-left: 1px solid #444;
-}
-
 .top-bar .top-left li a {
     color: #fff;
     text-decoration: none;
@@ -1167,12 +1167,12 @@ button {
 
 /*===== Header 2 =====*/
 .header-two {
-    border-bottom: 4px solid #fe5a0e;
+    border-bottom: 4px solid #b60d16;
     position: relative;
 }
 
 .header-two .mid-header {
-    padding: 30px 0 70px 0;
+    padding: 16px 0 16px 0;
 }
 
 .header-two .mid-header .mid-header-inner {
@@ -1187,7 +1187,7 @@ button {
 
 .header-two .mid-header ul li {
     display: inline-block;
-    padding-left: 50px;
+    padding-left:15px;
     position: relative;
     line-height: 20px;
     font-family: "Poppins", sans-serif;
@@ -1196,11 +1196,6 @@ button {
     letter-spacing: 0;
     font-weight: 500;
 }
-
-.header-two .mid-header ul li:not(:last-of-type) {
-    margin-right: 40px;
-}
-
 .header-two .mid-header ul li .icon {
     color: #fe5a0e;
     text-align: center;
@@ -1233,15 +1228,15 @@ button {
 
 .header-two .primary-header {
     width: 100%;
-    position: absolute;
+    /* position: absolute;
     left: 0;
     bottom: 0;
     transform: translateY(50%);
-    z-index: 9;
+    z-index: 9; */
 }
 
 .header-two .primary-header-inner {
-    background-color: #061b49;
+    background-color:#0460a3;
     padding: 0 20px;
 }
 
@@ -1694,12 +1689,12 @@ button {
     4.0 Hero Section
 =============================================== */
 .hero-section {
-    background-image: url(../img/hero-bg-1.jpg);
-    background-position: center center;
+    background-image: url(../img/b--5.jpg);
+    background-position:left;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
+    height:700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1729,7 +1724,7 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0px;
-    color: #fe5a0e;
+    color:#b60d16;
     margin: 0 0 15px;
 }
 
@@ -2607,7 +2602,7 @@ button {
 
 /*======  Counter 3 ======*/
 .counter-section-3 {
-    background-color: #061b49;
+    background-color:#0460a3;
     overflow: hidden;
 }
 

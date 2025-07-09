@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VoltPower - Electric Power Solutions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/fontawesome-pro-5.11.2-web/css/all.css">
+        <link rel="stylesheet" href="./assets/fontawesome-pro-5.11.2-web/css/fontawesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+      </head>
+<body>
+ <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+        <div class="top-left">
+            <ul>
+                <li>Phone: <a href="tel:+1234567890">+123 456 7890</a></li>
+                <li>Email: <a href="mailto:contact@email.com">contact@email.com</a></li>
+            </ul>
+        </div>
+        <div class="top-right">
+            <ul class="top-social">
+                <li>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M14.9997 1.6665H12.4997C11.3946 1.6665 10.3348 2.10549 9.5534 2.88689C8.77199 3.66829 8.33301 4.7281 8.33301 5.83317V8.33317H5.83301V11.6665H8.33301V18.3332H11.6663V11.6665H14.1663L14.9997 8.33317H11.6663V5.83317C11.6663 5.61216 11.7541 5.4002 11.9104 5.24391C12.0667 5.08763 12.2787 4.99984 12.4997 4.99984H14.9997V1.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_4701_28604)">
+                          <mask id="mask0_4701_28604" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                            <path d="M0 0H20V20H0V0Z" fill="white"/>
+                          </mask>
+                          <g mask="url(#mask0_4701_28604)">
+                            <path d="M14.792 2.44775H17.3479L11.7646 8.84537L18.3337 17.5525H13.1908L9.15985 12.2728L4.55271 17.5525H1.99437L7.9658 10.7073L1.66699 2.44894H6.9408L10.5789 7.27394L14.792 2.44775ZM13.8932 16.0192H15.3098L6.16699 3.90133H4.64794L13.8932 16.0192Z" fill="white"/>
+                          </g>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_4701_28604">
+                            <rect width="20" height="20" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M14.167 7.0835C14.8573 7.0835 15.417 6.52385 15.417 5.8335C15.417 5.14314 14.8573 4.5835 14.167 4.5835C13.4766 4.5835 12.917 5.14314 12.917 5.8335C12.917 6.52385 13.4766 7.0835 14.167 7.0835Z" fill="white"/>
+                            <path d="M13.3333 2.5C15.6333 2.5 17.5 4.36667 17.5 6.66667V13.3333C17.5 15.6333 15.6333 17.5 13.3333 17.5H6.66667C4.36667 17.5 2.5 15.6333 2.5 13.3333V6.66667C2.5 4.36667 4.36667 2.5 6.66667 2.5H10H13.3333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.0003 6.6665C11.842 6.6665 13.3337 8.15817 13.3337 9.99984C13.3337 11.8415 11.842 13.3332 10.0003 13.3332C8.15866 13.3332 6.66699 11.8415 6.66699 9.99984C6.66699 8.15817 8.15866 6.6665 10.0003 6.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M11.6667 10.0002L8.75 11.6668V8.3335L11.6667 10.0002Z" fill="white" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.66699 10.5902V9.41016C1.66699 6.99766 1.66699 5.791 2.42116 5.01516C3.17616 4.2385 4.36449 4.20516 6.74033 4.13766C7.86533 4.106 9.01533 4.0835 10.0003 4.0835C10.9853 4.0835 12.1345 4.106 13.2603 4.13766C15.6362 4.20516 16.8245 4.2385 17.5787 5.01516C18.3328 5.79183 18.3337 6.9985 18.3337 9.41016V10.5893C18.3337 13.0027 18.3337 14.2085 17.5795 14.9852C16.8245 15.761 15.637 15.7952 13.2603 15.8618C12.1353 15.8943 10.9853 15.9168 10.0003 15.9168C9.01533 15.9168 7.86616 15.8943 6.74033 15.8618C4.36449 15.7952 3.17616 15.7618 2.42116 14.9852C1.66616 14.2085 1.66699 13.0018 1.66699 10.5902Z" stroke="white" stroke-width="1.25"/>
+                      </svg>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+ </div>
+
+<header class="main-header">
+  <nav id="mainNavbar" class="header-navbar navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-white" href="#">
+        <div class="logo">
+            <img src="./assets/img/logo.png" class="img-fluid">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+         <li class="nav-item"><a class="nav-link text-white" href="#About.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white section">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="./assets/img/video/3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-content">
+            <div class="small-text">
+                
+                <span>The Future of Energy Starts Here</span>
+            </div>
+            <h1 class="display-4 fw-bold">
+              Empowering a Brighter Tomorrow
+            </h1>
+            <p class="lead text-light">
+              Innovative and Sustainable Electric Power Solutions for Homes, Businesses, and Industries.
+            </p>
+            <a href="#services" class="btn primary-btn btn-lg">
+              Explore Our Solutions
+              <i class="far fa-arrow-circle-right ms-1"></i>
+            </a>
+          </div>
+          <div class="bottom-shape">
+            <svg class="elementor-shape-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+            </svg>
+        </div>
+    </section>
+    <!-- hero-section.html -->
+    <section class="about-us py-5 section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Text Section -->
+            <div class="col-lg-6">
+              <div class="section-label text-uppercase fw-bold mb-2 text-danger">About Us</div>
+              <h2 class="display-5 fw-bold mb-3">Empowering business together</h2>
+              <p class="text-muted mb-4">
+                A business consulting website typically offers a range of services to help clients improve their businesses. Comprehensive business strategies that align with their goals and objectives.
+              </p>
+      
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-3">
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Strategic business plan</li>
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Marketing & Branding</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-3">
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Business Analysis</li>
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Cloud Computing</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="d-flex align-items-center mt-4">
+                <a href="#" class="btn primary-btn me-3">Explore More <i class="far fa-arrow-circle-right ms-1"></i></a>
+              </div>
+            </div>
+      
+            <!-- Right Image & Stats Section -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="row text-center">
+                    <div class="col-sm-4 mb-3">
+                        <div class="text-danger fs-4 fw-bold">386+</div>
+                        <div class="text-muted small">Satisfied clients across the world</div>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <div class="text-danger fs-4 fw-bold">1390+</div>
+                        <div class="text-muted small">Total projects we have completed</div>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <div class="text-danger fs-4 fw-bold">25+</div>
+                        <div class="text-muted small">Years of experience in this field</div>
+                    </div>
+                </div>
+              <div class="text-center mb-4">
+                <img src="./assets/img/about.jpg" alt="Team" class="img-fluid rounded">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="choose-us-section py-5 section">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <!-- Left content -->
+            <div class="col-lg-6">
+              <span class="primary-text fw-bold small d-block mb-2"> WHY CHOOSE US?</span>
+              <h2 class="fw-bold mb-3">Why Choose Bizan?</h2>
+              <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus placeat velit reprehenderit id mollitia totam reiciendis dicta porro expedita rem, dolorem temporibus, ipsa tenetur laboriosam nisi vel libero est accusamus!
+                By leveraging their extensive industry networks and market insights, these firms help clients forge strategic alliances, joint ventures, and strategic
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat eaque neque doloremque aspernatur atque? Nostrum odio corporis ipsa, aliquam qui, quasi corrupti quae explicabo dolorem nulla, possimus cum facilis!
+              </p>
+    
+              <div class="d-flex align-items-start mb-4 feature-item">
+                <div class="icon-box me-3">
+                  <img src="https://img.icons8.com/ios-filled/40/star.png" alt="icon" />
+                </div>
+                <div>
+                  <h6 class="fw-bold text-dark mb-1">Expertise Across Industries:</h6>
+                  <p class="text-muted small mb-0">
+                    By leveraging their extensive industry networks and market insights, these firms.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="d-flex align-items-start mb-4 feature-item">
+                <div class="icon-box me-3">
+                  <img src="https://img.icons8.com/ios-filled/40/approval.png" alt="icon" />
+                </div>
+                <div>
+                  <h6 class="fw-bold text-dark mb-1">Proven Track Record:</h6>
+                  <p class="text-muted small mb-0">
+                    By leveraging their extensive industry networks and market insights, these firms.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="d-flex align-items-start feature-item">
+                <div class="icon-box me-3">
+                  <img src="https://img.icons8.com/ios-filled/40/medal.png" alt="icon" />
+                </div>
+                <div>
+                  <h6 class="fw-bold text-dark mb-1">Commitment to Excellence:</h6>
+                  <p class="text-muted small mb-0">
+                    By leveraging their extensive industry networks and market insights, these firms.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Right images -->
+            <div class="col-lg-6">
+                <div class="gallery">
+                   <div class="grid">
+                        <div class="badge">
+                            <span>25+<br><small>Years of<br>experience</small></span>
+                        </div> 
+                        <div class="image-grid">
+                            <img src="./assets/img/grid-1.jpg" alt="Professional Woman" />
+                            <img src="./assets/img/grid-1.jpg" alt="Professional Woman" />
+                            <img src="./assets/img/grid-1.jpg" alt="Professional Woman" />
+                            <img src="./assets/img/grid-1.jpg" alt="Professional Woman" />
+                        </div>
+                   </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="services-section py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <span class="heading fw-bold small d-block mb-2">OUR SERVICES</span>
+              <h2 class="fw-bold mb-3">Get Professional Service</h2>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, aliquid dolorem. Deserunt, deleniti voluptatibus aspernatur omnis asperiores ipsa vero alias consequuntur qui magnam accusantium voluptatum veniam vel accusamus numquam aliquid.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis doloremque soluta deserunt adipisci, magni fugiat quo nesciunt nulla eaque harum rerum porro cum eligendi cumque sed obcaecati asperiores iusto!
+                By leveraging their extensive industry networks and market insights, these firms help clients forge strategic alliances, joint ventures, and strategic
+              </p>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-3">
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Strategic business plan</li>
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Marketing &amp; Branding</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-3">
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Business Analysis</li>
+                    <li><i class="bi bi-check2-circle text-danger me-2"></i>Cloud Computing</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="btn primary-btn mt-3">View Our Services <i class="far fa-arrow-circle-right ms-1"></i></a>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="row gy-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-6">
+                      <div class="service-card p-4 rounded shadow-sm h-100">
+                        <div class="icon mb-3">
+                          <img src="https://img.icons8.com/ios-filled/50/000000/settings.png" alt="icon" width="40">
+                        </div>
+                        <h5 class="fw-bold">Operations Optimization</h5>
+                        <p class="text-muted small">Your operations and processes are fundamental to your company’s ability to deliver value to get you where you want to.</p>
+                      </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-6">
+                      <div class="service-card p-4 rounded shadow-sm h-100">
+                        <div class="icon mb-3">
+                          <img src="https://img.icons8.com/ios-filled/50/000000/conference-call.png" alt="icon" width="40">
+                        </div>
+                        <h5 class="fw-bold">Human Resources</h5>
+                        <p class="text-muted small">Your operations and processes are fundamental to your company’s ability to deliver value to get you where you want to.</p>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-6">
+                      <div class="service-card p-4 rounded shadow-sm h-100">
+                        <div class="icon mb-3">
+                          <img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png" alt="icon" width="40">
+                        </div>
+                        <h5 class="fw-bold">Technology Integration</h5>
+                        <p class="text-muted small">Your operations and processes are fundamental to your company’s ability to deliver value to get you where you want to.</p>
+                      </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-6 col-lg-6">
+                      <div class="service-card p-4 rounded shadow-sm h-100">
+                        <div class="icon mb-3">
+                          <img src="https://img.icons8.com/ios-filled/50/000000/security-configuration.png" alt="icon" width="40">
+                        </div>
+                        <h5 class="fw-bold">Risk Management</h5>
+                        <p class="text-muted small">Your operations and processes are fundamental to your company’s ability to deliver value to get you where you want to.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        
+         
+        </div>
+    </section>
+</main>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    const navbar = document.getElementById("mainNavbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 80) {
+        if (!navbar.classList.contains("navbar-scrolled")) {
+          navbar.classList.add("navbar-scrolled");
+          gsap.fromTo(
+            navbar,
+            { backgroundColor: "transparent", y: -20 },
+            { backgroundColor: "#ffffff", y: 0, duration: 0.5 }
+          );
+        }
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+    gsap.from(".animate-badge", { opacity: 0, y: -20, duration: 0.8 });
+    gsap.from(".animate-heading", { opacity: 0, x: -50, duration: 1, delay: 0.2 });
+    gsap.from(".animate-paragraph", { opacity: 0, y: 30, duration: 1, delay: 0.4 });
+    gsap.from(".animate-buttons", { opacity: 0, y: 30, duration: 1, delay: 0.6 });
+    gsap.from(".animate-stats .col-4", {
+      opacity: 0,
+      y: 20,
+      duration: 0.8,
+      stagger: 0.2,
+      delay: 0.8
+    });
+    gsap.from(".animate-card", { opacity: 0, scale: 0.9, duration: 1, delay: 1 });
+  });
+  </script>
+</body>
+</html>
