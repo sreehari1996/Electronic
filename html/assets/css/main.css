@@ -1252,10 +1252,19 @@ button {
 
 .primary-header-two .header-menu-wrap ul li > a {
     color: #fff;
-    padding-right: 30px;
-    padding-left: 0;
 }
-
+.primary-header-two .header-menu-wrap ul li > a.active:after{
+    content:'';
+    border-bottom: 2px solid var(--secondary-color);
+    width:50px;
+    height: 10px;
+    position: absolute;
+    top:20px;
+    left:14px;
+}
+.primary-header-two .header-menu-wrap ul li > a.active{
+    position: relative;
+}
 .primary-header-two .header-menu-wrap ul li > a:hover {
     color: #fe5a0e;
 }

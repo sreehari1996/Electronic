@@ -125,6 +125,7 @@
     .service-box{
         margin-bottom:16px;
         height: 100%;
+        border-radius:16px;
         &:hover{
             background-color:var(--primary-color);
         }
@@ -184,6 +185,9 @@
 
 // aboutpage
 .about-page-inner{
+    .about-list li i{
+        color:var(--secondary-color);
+    }
     .page-header .overlay{
         background-color: rgb(6 27 73 / 50%);
     }
@@ -211,3 +215,159 @@
         }
     }
 }
+
+.servive-page-inner{
+    .page-header .overlay{
+        background-color: rgb(6 27 73 / 50%);
+    }
+    .page-header {
+        background-image: url('../../img/b-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    
+}
+
+.mission-section {
+    background:#f9f9f9;
+    padding: 5rem 0;
+  
+    .image-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      gap: 1rem;
+  
+      .img-large {
+        grid-column: 1 / 3;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+  
+      .img-top, .img-bottom {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    }
+  
+    .mission-content {
+      padding-left: 2rem;
+  
+      h2 {
+        font-family: "Poppins", Sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        color: #263a4f;
+        margin: 0 0 20px;
+      }
+      .highlight-box {
+        margin-top: 2rem;
+        background-color:#0161a82e;
+        color: #1c1c1c;
+        padding: 1.25rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+  
+        .icon {
+          background: #26c3c3;
+          color: #fff;
+          padding: 0.75rem;
+          border-radius: 50%;
+          font-size: 1.25rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+  
+        p {
+          margin: 0;
+          font-weight: 600;
+        }
+      }
+    }
+  
+    @media (max-width: 767px) {
+      .image-grid {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .mission-content {
+        padding-left: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+  
+  .faq-inner{
+    .faq-item .card-header button[aria-expanded="true"]{
+        background-color:var(--secondary-color);
+    }
+    .page-header .overlay{
+        background-color: rgb(6 27 73 / 50%);
+    }
+    .page-header {
+        background-image: url('../../img/b-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+  }
+
+  .header-right a.header-btn.active{
+    color:var(--secondary-color);
+  }
+  .contact-page-inner{
+    .contact-wrap{
+        position: relative;
+        border-radius: 16px;
+    }
+    .page-header .overlay{
+        background-color: rgb(6 27 73 / 50%);
+
+    }
+    .page-header {
+        background-image: url('../../img/b-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    .contact-details li i {
+        color:var(--secondary-color);
+        font-size: 14px;
+        padding-right: 20px;
+    }
+  }
+
+
+  
