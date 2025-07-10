@@ -30,6 +30,10 @@
 .header-two .mid-header {
   padding: 16px 0 6px 0;
 }
+.header-two .mid-header ul {
+  display: flex;
+  align-items: center;
+}
 .header-two .mid-header ul li {
   display: flex;
   padding-left: 15px;
@@ -48,6 +52,7 @@
 }
 .header-two .mid-header ul li .icon {
   position: relative;
+  color: var(--secondary-color);
   transform: translateY(0%);
 }
 
@@ -101,6 +106,9 @@
   object-fit: cover;
   height: 100%;
 }
+.project-section .project-content span {
+  background-color: var(--secondary-color);
+}
 
 .cta-section {
   background-image: url("../../img/b-7.jpg");
@@ -124,7 +132,7 @@
   background-color: var(--primary-color);
 }
 .widget-section .widget-contact li i {
-  color: var(--secondary-color);
+  color: #fff;
 }
 .widget-section .widget-box .widget-title h3:after {
   background-color: var(--third-color);
@@ -152,6 +160,10 @@
 .footer-section {
   background-color: #fff;
 }
+.footer-section p {
+  color: var(--primary-color);
+  font-weight: 600;
+}
 
 .primary-header-two .header-menu-wrap ul li > a:hover {
   color: var(--secondary-color);
@@ -159,6 +171,33 @@
 
 .dl-slider .slick-dots li.slick-active button {
   background-color: var(--third-color) !important;
+}
+
+.counter-section .counter-content i {
+  color: var(--secondary-color);
+}
+
+.about-page-inner .page-header .overlay {
+  background-color: rgba(6, 27, 73, 0.5);
+}
+.about-page-inner .page-header {
+  background-image: url("../../img/b-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.about-page-inner .blog-item .blog-thumb .category {
+  background-color: var(--secondary-color);
+}
+.about-page-inner .counter-section .counter-content i {
+  color: var(--secondary-color);
 }
 
 /*# sourceMappingURL=custom_style.css.map */

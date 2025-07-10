@@ -739,6 +739,7 @@ button {
     padding:0;
     list-style:none;
     display:flex;
+    padding-left:16px;
 }
 
 .header-menu-wrap ul li {
@@ -996,7 +997,7 @@ button {
 
 .header-right a.header-btn {
     display: inline-block;
-    background:var(--secondary-color);
+    background:#061b49;
     color: #FFF;
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
@@ -1243,7 +1244,10 @@ button {
 
 .header-two .primary-header-inner {
     background-color:#0460a3;
-    padding: 0 20px;
+    padding:0px 35px;
+    border-radius:16px;
+    /* background-color: rgba(40, 52, 64, 0.7); */
+    backdrop-filter: blur(10px);
 }
 
 .primary-header-two .header-menu-wrap ul li > a {

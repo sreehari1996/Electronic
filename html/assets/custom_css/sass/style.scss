@@ -29,6 +29,10 @@
     }
     .mid-header {
     padding: 16px 0 6px 0;
+        ul{
+            display:flex;
+            align-items:center;
+        }
      ul li {
         display: flex;
         padding-left: 15px;
@@ -46,12 +50,19 @@
         }
         .icon{
             position: relative;
+            color:var(--secondary-color);
             transform: translateY(0%);
         }
      }
     }
 }
+.hero-sectionslider{
+    .inner-layer{
+        .animation-text{
 
+        }
+    }
+}
 
 .about-section{
     .about-item{
@@ -100,6 +111,9 @@
         height:100%;
     }
     }
+    .project-content span{
+        background-color:var(--secondary-color);
+    }
 }
 .cta-section{
     background-image:url('../../img/b-7.jpg');
@@ -122,7 +136,7 @@
 .widget-section{
     background-color:var(--primary-color);
     .widget-contact li i{
-        color:var(--secondary-color);
+        color:#fff;
     }
     .widget-box .widget-title h3:after{
         background-color:var(--third-color);
@@ -148,10 +162,52 @@
 }
 .footer-section{
     background-color:#fff;
+    p{
+        color:var(--primary-color);
+        font-weight:600;
+    }
 }
 .primary-header-two .header-menu-wrap ul li > a:hover{
     color:var(--secondary-color);
 }
 .dl-slider .slick-dots li.slick-active button{
     background-color:var(--third-color) !important;
+}
+
+.counter-section{
+    .counter-content {
+        i{
+            color:var(--secondary-color);
+        }
+    }
+}
+
+// aboutpage
+.about-page-inner{
+    .page-header .overlay{
+        background-color: rgb(6 27 73 / 50%);
+    }
+    .page-header {
+        background-image: url('../../img/b-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    .blog-item .blog-thumb .category{
+        background-color:var(--secondary-color);
+    }
+    .counter-section{
+        .counter-content {
+            i{
+                color:var(--secondary-color);
+            }
+        }
+    }
 }
