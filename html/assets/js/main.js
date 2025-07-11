@@ -11,7 +11,14 @@
     $(window).on('load', function () {
         $('body').addClass('loaded');
     });
-
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector(".primary-header-two.primary-header");
+        if (window.scrollY > 0) {
+          header.classList.add("scroll");
+        } else {
+          header.classList.remove("scroll");
+        }
+      });
     $(document).ready(function () {
 
         /* ======= Header ======= */
@@ -472,8 +479,8 @@
                 {
                     breakpoint: 580,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow:1,
+                        slidesToScroll:1
                     }
             }
         ]
