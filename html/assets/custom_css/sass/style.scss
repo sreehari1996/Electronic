@@ -7,6 +7,11 @@
     margin:0;
     padding:0;
 }
+@media screen and (max-width:767px){
+    .header-2 .sticky-header{
+        display:none;
+    }
+}
 
 .header-two{
     .primary-header {
@@ -16,6 +21,16 @@
         bottom: 0;
         transform: translateY(50%);
         z-index: 9;
+        background-color:transparent  !important;
+        @media screen and (max-width:992px){
+            z-index: 9;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            transform: translateY(0);
+        }
     }
     .mid-header .mid-header-inner {
         display: flex;
@@ -156,9 +171,90 @@
     align-items: center;
     justify-content: space-between;
 }
-@media screen and (max-width:767px){
+@media (max-width: 992px) {
+    .header-two .mid-header {
+        display: none;
+    }
+    .header-menu-wrap ul{
+        display:block;
+    }
+}
+.mobile-menulink{
+    display:none;
+    @media screen and (max-width:992px){
+        display:block;
+    }
+}
+
+@media screen and (max-width:992px){
+    .mobile-menu-icon {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-direction:row-reverse;
+        width:90%;
+        .logo-menu{
+            img{
+                width:95px;
+            }
+        }
+    }
+    .viewport-sm .primary-header-two .header-right .search-icon{
+        display:none;
+    }
+    .header-two .primary-header-inner{
+        border-radius:0px;
+        padding:0px;
+    }
     .header-menu-wrap ul{
         flex-direction:column;
+    }
+    .primary-header-two{
+        .container{
+            padding:0;
+            width: 100%;
+            padding: 0;
+            max-width: 100%;
+        }
+        .header-right{
+            .header-btn{
+                display:none;
+            }
+        }
+    }
+    .header-2 .sticky-header{
+        display:none;
+    }
+
+}
+@media screen and (min-width:240px) and (max-width:767px){
+    .mobile-menulink{
+        display:block !important;
+    }
+    .logo-menu{
+        display:block !important;
+    }
+    .header-menu-wrap ul{
+        padding-left:0px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .mobile-menulink{
+        display:block !important;
+    }
+    .header-menu-wrap ul{
+        padding-left:0px;
+    }
+    .header-two .primary-header-inner{
+        padding:20px;
+        height:70px;
+    }
+    .header-two .primary-header{
+        position:sticky;
+        top:0;
+    }
+    .logo-menu{
+        display:block !important;
     }
 }
 .footer-section{
@@ -343,7 +439,11 @@
   .contact-page-inner{
     .contact-wrap{
         position: relative;
-        border-radius: 16px;
+        border-radius:16px;
+        margin-bottom:20px;
+        @media screen and (max-width:992px){
+            margin-top:22px;
+        }
     }
     .page-header .overlay{
         background-color: rgb(6 27 73 / 50%);
@@ -370,4 +470,41 @@
   }
 
 
+  .arcgis-scope {
+    padding:30px;
+    background:#f9f9f9;
+    border-radius:8px;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size:20px;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size:16px;
+      margin-top: 1rem;
+    }
   
+    ul {
+      list-style: none;
+      padding-left: 0;
+  
+      li {
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        color: #555;
+  
+        ul {
+          margin-top: 0.5rem;
+          padding-left: 1.5rem;
+  
+          li {
+            list-style: disc;
+          }
+        }
+      }
+    }
+  }

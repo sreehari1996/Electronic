@@ -951,10 +951,6 @@ button {
     .primary-header-two .header-right a.header-btn {
         margin: 0;
     }
-
-    .header-two .mid-header .header-logo {
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 782px) {
@@ -1249,7 +1245,11 @@ button {
     /* background-color: rgba(40, 52, 64, 0.7); */
     backdrop-filter: blur(10px);
 }
-
+@media screen and (max-width:767px){
+    .header-two .primary-header-inner {
+    border-radius:0px;
+    }
+}
 .primary-header-two .header-menu-wrap ul li > a {
     color: #fff;
 }
@@ -1363,7 +1363,7 @@ button {
     }
 
     .primary-header-two .header-right .mobile-menu-icon {
-        margin-left: auto;
+        margin-left:inherit;
     }
 
     .primary-header-two .header-right .line-menu {
