@@ -158,6 +158,11 @@
     }
     .service-icon{
         color:var(--primary-color);
+        &>img{
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+       
     }
 }
 .widget-section{

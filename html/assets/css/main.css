@@ -437,8 +437,7 @@ button {
   justify-content: center;
   background: #fff;
   z-index: 9999;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-
+  transition: opacity 0.2s ease, visibility 0.5s ease;
   &.preloader-hidden {
     opacity: 0;
     visibility: hidden;

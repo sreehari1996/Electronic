@@ -151,6 +151,10 @@
 .service-section .service-icon {
   color: var(--primary-color);
 }
+.service-section .service-icon > img {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
 
 .widget-section {
   background-color: var(--primary-color);
