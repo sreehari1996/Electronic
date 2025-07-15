@@ -344,7 +344,7 @@ button {
 }
 
 /* ======= Preloader Styles ======= */
-.loaded .site-preloader-wrap {
+/* .loaded .site-preloader-wrap {
     opacity: 0;
     visibility: hidden;
 }
@@ -359,22 +359,15 @@ button {
     left: 0
 }
 
-.site-preloader-wrap .spinner {
-    background-color: #fe5a0e;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -20px;
-    margin-top: -20px;
-}
 
 .spinner {
-    width: 40px;
-    height: 40px;
-
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-    animation: sk-scaleout 1.0s infinite ease-in-out;
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 20px var(--primary-color);
 }
 
 @-webkit-keyframes sk-scaleout {
@@ -399,9 +392,60 @@ button {
         transform: scale(1.0);
         opacity: 0;
     }
-}
+} */
 
 /* ======= Default Button ======= */
+/* 
+.site-preloader-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  &.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.site-preloader-wrap {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  &.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
 .btn-group {}
 
 .btn-group a {
@@ -2024,11 +2068,12 @@ button {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    width:100px;
     opacity: .2;
 }
 
 .service-content .overlay-icon i {
-    color: #fe5a0e;
+    color:var(--primary-color);
     font-size: 90px;
 }
 

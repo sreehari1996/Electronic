@@ -6,7 +6,11 @@
 
 (function ($) {
     "use strict";
-
+     window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelector('.site-preloader-wrap').classList.add('preloader-hidden');
+    }, 500); // Delay for smoothness
+  });
     /* ======= Preloader ======= */
     $(window).on('load', function () {
         $('body').addClass('loaded');
@@ -261,95 +265,6 @@
 
         $('.venobox').venobox();
 
-        /* ======= Testimonials ======= */
-        $('.testimonials-carousel').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            prevArrow: '<i class="fa fa-chevron-left left"></i>',
-            nextArrow: '<i class="fa fa-chevron-right right"></i>',
-            infinite: true,
-            dots: true,
-            pauseOnFocus: false,
-            pauseOnHover: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-            },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-            },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-            },
-                {
-                    breakpoint: 580,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-            }
-        ]
-        });
-
-        /* ======= Testimonials ======= */
-        $('.testimonials-carousel-2').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            prevArrow: '<i class="fa fa-chevron-left left"></i>',
-            nextArrow: '<i class="fa fa-chevron-right right"></i>',
-            infinite: true,
-            dots: true,
-            pauseOnFocus: false,
-            pauseOnHover: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                    }
-            },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-            },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-            },
-                {
-                    breakpoint: 580,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-            }
-        ]
-        });
 
         /* ======= Portfolio ======= */
         $('.portfolio-carousel').slick({
@@ -401,6 +316,7 @@
             dots: true,
             infinite: false,
             speed: 300,
+            autoplay:true,
             slidesToShow: 6,
             slidesToScroll: 1,
             prevArrow: '<i class="fa fa-chevron-left left"></i>',
@@ -445,6 +361,7 @@
         $('.project-carousel').slick({
             dots: true,
             infinite: false,
+             autoplay:true,
             speed: 300,
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -490,6 +407,7 @@
         $('.project-carousel-2').slick({
             dots: true,
             infinite: false,
+             autoplay:true,
             speed: 300,
             slidesToShow: 5,
             slidesToScroll: 1,

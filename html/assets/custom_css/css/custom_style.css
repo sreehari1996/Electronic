@@ -81,6 +81,7 @@
 .about-section .about-item > img {
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .read-more {
@@ -123,6 +124,7 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
+  border-radius: 8px;
 }
 .project-section .project-content span {
   background-color: var(--secondary-color);
@@ -143,8 +145,11 @@
 .service-section .service-box:hover {
   background-color: var(--primary-color);
 }
+.service-section .service-box:hover .service-icon > img {
+  filter: brightness(0) invert(1);
+}
 .service-section .service-icon {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .widget-section {
