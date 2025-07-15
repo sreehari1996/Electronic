@@ -331,6 +331,33 @@
   color: var(--secondary-color);
 }
 
+.working-process-box .icon-box {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.working-process-box .icon-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.servive-page-inner .working-process-box .icon-box {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.servive-page-inner .working-process-box .icon-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 20px;
+}
 .servive-page-inner .page-header .overlay {
   background-color: rgba(6, 27, 73, 0.5);
 }
